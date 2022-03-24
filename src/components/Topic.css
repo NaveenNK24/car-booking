@@ -1,0 +1,9 @@
+.topic{
+    display: block;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    color: white;
+    background: #0A3058;
+    padding: 1em 0;
+}
