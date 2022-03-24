@@ -17,22 +17,6 @@ function OtpVerify() {
             <label htmlFor="otp">Verify OTP</label> <br />
             <input type="number" name="otp" id="otp" />
           </div>
-          {/* <div className="form-input">
-            <label htmlFor="destination">Destination</label> <br />
-            <input type="text" name="destination" id="destination" />
-          </div>
-          <div className="form-input">
-            <label htmlFor="Car Type">Car Type</label> <br />
-            <select name="cars" id="cars">
-              <option value="Hatchback">Hatchback</option>
-              <option value="Sedan">Sedan</option>
-              <option value="SUV">SUV</option>
-            </select>
-          </div>
-          <div className="form-input">
-            <label htmlFor="total_nos">Total Members</label> <br />
-            <input type="number" name="total-nos" id="total-nos" />
-          </div> */}
           <Button handleClick={handleSubmit} name={"Verify via OTP"} />
         </form>
       </div>

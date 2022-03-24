@@ -12,8 +12,7 @@ function App() {
     <Header/>   
       <Routes>
         <Route path='/' element = {<Form/>}/>
-        <Route path='/car-booking' element = {<Form/>}/>
-       
+        <Route path='/car-booking' element = {<Form/>}/>      
         <Route path='/pricing' element = {<Price/>}/>
         <Route path='/otp-verify' element = {<OtpVerify/>}/>
         <Route path='/submission' element = {<Submit/>}/>

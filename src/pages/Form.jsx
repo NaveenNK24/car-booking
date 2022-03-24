@@ -44,7 +44,7 @@ function Form() {
       validations.totalMembers = "totalMembers is required";
       isValid = false;
     }
-    if (totalMembers && (totalMembers >=0 && totalMembers <= 6)) {
+    if (totalMembers && (totalMembers <=0 || totalMembers > 6)) {
       validations.totalMembers = "total members between 0 to 6";
       isValid = false
     }
@@ -65,21 +65,23 @@ function Form() {
       message = `${name} is required`;
     }
 
-    if (value && name === 'totalMembers' && (value >=1 && value <= 6)) {
+    if (value && name === 'totalMembers' && (value <=0 || value > 6)) {
       message = 'total members between 0 to 6'
     }
 
     setValidations({ ...validations, [name]: message });
   };
 
-  const handleSubmit = () => {
+    
+  const handleSubmit = (event) => {
+    event.preventDefault();
     const isValid = validateAll();
 
     if (!isValid) {
       return false;
     }
     console.log(values);
-    navigate("/pricing");
+    navigate("/pricing",{state: values});
   };
   //
   const { source, destination, totalMembers } = values;
