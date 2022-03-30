@@ -45,6 +45,18 @@
     font-size: medium;
 }
 
+.form-input > button:disabled {
+    border: 1px solid gray;
+    border-radius: 4px;   
+    width: 21.7em;
+    margin-top: 0.2em;
+    padding: 0.7em;
+    color: #0F53FB;
+    background: gray;
+    text-align: center;
+    font-size: medium;
+}
+
 .errors{
     color: red;
 }
