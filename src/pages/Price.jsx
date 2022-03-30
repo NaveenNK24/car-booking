@@ -46,7 +46,7 @@ function Price() {
     if(name === 'mobile' && value.length <= 9){
       setMobileVal('Enter 10 digit Mobile Number')
     }
-    if(name === 'cusName' && (value.length == 0 || value == '' || value == null )){
+    if(name === 'cusName' && (value.length === 0 || value === '' || value === null )){
       setNameVal('Enter the name')
     }
  

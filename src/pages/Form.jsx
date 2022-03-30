@@ -45,7 +45,7 @@ function Form() {
       isValid = false;
     }
     if (totalMembers && (totalMembers <=0 || totalMembers > 6)) {
-      validations.totalMembers = "total members between 0 to 6";
+      validations.totalMembers = "total members between 1 to 6";
       isValid = false
     }
 
@@ -66,7 +66,7 @@ function Form() {
     }
 
     if (value && name === 'totalMembers' && (value <=0 || value > 6)) {
-      message = 'total members between 0 to 6'
+      message = 'total members between 1 to 6'
     }
 
     setValidations({ ...validations, [name]: message });
